@@ -10,6 +10,7 @@ gulp.task('sass', function () {
     }).on('error', sass.logError))
     .pipe(autoprefixer({//ベンダープレフィックス付けて
       browsers: ['last 2 major versions', 'ie >= 10'],
+      grid: true,
       cascade: false
     }))
     .pipe(gulp.dest('./html/css/'));
