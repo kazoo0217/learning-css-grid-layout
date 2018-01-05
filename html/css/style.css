@@ -50,9 +50,6 @@ aside {
   grid-column: 1 / 2;
   -ms-grid-row: 3;
   grid-row: 3;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 main {
@@ -97,6 +94,9 @@ footer {
   aside {
     -ms-grid-row: 3;
     grid-row: 3;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
   aside ul {
     display: -webkit-box;
