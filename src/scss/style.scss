@@ -9,14 +9,12 @@ ul {
 }
 
 header {
-  background: #eef;
   grid-column: 1 / 3;
   grid-row: 1 / 1;
   text-align: center;
 }
 
 nav {
-  background: #efe;
   grid-column: 1 / 3;
   grid-row: 2 / 3;
   ul {
@@ -31,7 +29,6 @@ nav {
 }
 
 aside {
-  background: tomato;
   grid-column: 1 / 2;
   grid-row: 3;
   position: sticky;
@@ -41,12 +38,10 @@ aside {
 main {
   grid-column: 2 / 3;
   grid-row: 3;
-  background: yellow;
 }
 
 
 footer {
-  background: #eef;
   grid-column: 1 / 3;
   grid-row: 4;
   text-align: center;
