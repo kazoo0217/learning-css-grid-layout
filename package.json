@@ -15,6 +15,6 @@
   "author": "Kazuhito Tsujita",
   "license": "ISC",
   "dependencies": {
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^8.0.0"
   }
 }
