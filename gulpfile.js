@@ -1,18 +1,21 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 
 gulp.task('sass', function () {
   return gulp.src('./src/scss/*.scss')
     .pipe(sass({
       outputStyle: 'expanded'
     }).on('error', sass.logError))
-    .pipe(autoprefixer({//ベンダープレフィックス付けて
-      browsers: ['last 2 major versions', 'ie >= 10'],
-      grid: true,
-      cascade: false
-    }))
+    .pipe(postcss([
+      autoprefixer({
+        browsers: ['last 2 major versions', 'ie >= 10'],
+        grid: true,
+        cascade: false
+      })
+    ]))
     .pipe(gulp.dest('./html/css/'));
 });
 
