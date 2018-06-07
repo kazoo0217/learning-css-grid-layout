@@ -3,6 +3,7 @@ var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
+var postcssGapProperties = require('postcss-gap-properties');
 
 gulp.task('sass', function () {
   return gulp.src('./src/scss/*.scss')
@@ -10,6 +11,7 @@ gulp.task('sass', function () {
       outputStyle: 'expanded'
     }).on('error', sass.logError))
     .pipe(postcss([
+      postcssGapProperties(),
       autoprefixer({
         browsers: ['last 2 major versions', 'ie >= 10'],
         grid: true,
