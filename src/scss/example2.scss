@@ -1,0 +1,16 @@
+$fr: 200px;
+
+.grid-container {
+
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax($fr, 1fr));
+
+  margin: 0 auto;
+  max-width: calc(calc(#{$fr}*4) + calc(1em*3));
+
+  .grid-item {
+    background-color: rgba(tomato, .1);
+    padding: .6em 1em;
+  }
+}
