@@ -13,7 +13,7 @@ gulp.task('sass', function () {
     .pipe(postcss([
       postcssGapProperties(),
       autoprefixer({
-        browsers: ['last 2 major versions', 'ie >= 10'],
+        browsers: ['last 2 major versions', 'ie >= 11'],
         grid: true,
         cascade: false
       })
