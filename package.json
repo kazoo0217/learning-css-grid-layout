@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "autoprefixer": "^8.6.2",
+    "autoprefixer": "^8.6.3",
     "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.1",
