@@ -18,7 +18,7 @@ gulp.task('sass', function () {
         cascade: false
       })
     ]))
-    .pipe(gulp.dest('./html/css/'));
+    .pipe(gulp.dest('./docs/css/'));
 });
 
 gulp.task('sass:watch', function () {
@@ -29,7 +29,7 @@ gulp.task('sass:watch', function () {
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
-      baseDir: "./html"
+      baseDir: "./docs"
     }
   });
 });
@@ -39,6 +39,6 @@ gulp.task('bs-reload', function () {
 });
 
 gulp.task('default', ['browser-sync','sass:watch'], function () {
-  gulp.watch("./html/*.html", ['bs-reload']);
-  gulp.watch("./html/css/*.css", ['bs-reload']);
+  gulp.watch("./docs/*.html", ['bs-reload']);
+  gulp.watch("./docs/css/*.css", ['bs-reload']);
 });
