@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  background-color: black;
+  grid-gap: 10px;
+  padding: 10px;
+  -ms-grid-columns: 12fr 9fr 18fr 12fr 16fr 31fr 10fr;
+  grid-template-columns: 12fr 9fr 18fr 12fr 16fr 31fr 10fr;
+  -ms-grid-rows: 1fr 1.8fr 1.2fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1.8fr 1.2fr 1fr 0.5fr;
+  height: 100vh;
+}
+
+.grid-container div {
+  background-color: white;
+  width: 1fr;
+  height: 1fr;
+}
+
+.grid-container div.red {
+  background-color: red;
+}
+
+.grid-container div.yellow {
+  background-color: yellow;
+}
+
+.grid-container div.blue {
+  background-color: blue;
+}
+
+.grid-container div.green {
+  background-color: green;
+}
+
+.grid-container div.span-col-2 {
+  -ms-grid-column-span: 2;
+  grid-column-end: span 2;
+}
+
+.grid-container div.span-col-3 {
+  -ms-grid-column-span: 3;
+  grid-column-end: span 3;
+}
+
+.grid-container div.span-row-2 {
+  -ms-grid-row-span: 2;
+  grid-row-end: span 2;
+}
+
+.grid-container div.span-row-3 {
+  -ms-grid-row-span: 3;
+  grid-row-end: span 3;
+}
