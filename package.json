@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "autoprefixer": "^9.1.5",
-    "browser-sync": "^2.24.7",
+    "autoprefixer": "^9.3.1",
+    "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "postcss-gap-properties": "^2.0.0"
   },
   "scripts": {
