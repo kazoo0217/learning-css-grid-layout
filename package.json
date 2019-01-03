@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "devDependencies": {
-    "autoprefixer": "^9.3.1",
+    "autoprefixer": "^9.4.4",
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-postcss": "^8.0.0",
@@ -17,6 +17,6 @@
   "author": "Kazuhito Tsujita",
   "license": "ISC",
   "dependencies": {
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.1"
   }
 }
